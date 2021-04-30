@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>transform实现图片拉近效果</title>
+  <style>
+       .test_a {  
+                display: block;
+                margin: 0 auto;
+                width:400px;
+                margin-top: 200px;
+               
+                /* overflow: hidden; */
+            }
+              
+            .test_a img {  
+                width: 100%;  
+                transform: scale(1);  
+                transition: all 1s ease 0s;
+            }  
+            
+            .test_a:hover img {  
+                transform: scale(1.01,1.01);
+                transition: all 1s ease 0s; 
+                 /* 一秒钟完成所有过度效果，缓慢的（还有其他先快后慢，先慢后快） */
+                box-shadow: 0px 0px 10px rgb(143, 123, 123);
+            } 
+  </style>
+</head>
+
+<body>
+    <a href="#" class="test_a">
+        <img src="img/pdd_logo_v2.png" />
+    </a>
+</body>
+
+</html>

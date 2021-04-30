@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="header.css">
+    <script>
+        var j_menu = document.querySelector(".j-menu"),
+    site_Shop = document.querySelector(".site-shop"),
+    cartColor = document.querySelector(".cart");
+site_Shop.onmouseover = function() {
+    j_menu.style.height = "99px";
+    cartColor.classList.add("cart-color");
+}
+site_Shop.onmouseout = function() {
+        j_menu.style.height = "0";
+        cartColor.classList.remove("cart-color");
+    }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="site-topbar">
+            <div class="container w clearfix">
+                <div class="topbar-nav fl">
+                    <a href="#">小米商城</a>
+                    <span>|</span>
+                    <a href="#">MIUI</a>
+                    <span>|</span>
+                    <a href="#">IoT</a>
+                    <span>|</span>
+                    <a href="#">云服务</a>
+                    <span>|</span>
+                    <a href="#"> 天星数科</a>
+                    <span>|</span>
+                    <a href="#">有品</a>
+                    <span>|</span>
+                    <a href="#">小爱开放平台</a>
+                    <span>|</span>
+                    <a href="#">企业团购</a>
+                    <span>|</span>
+                    <a href="#">资质证照</a>
+                    <span>|</span>
+                    <a href="#">协议规则</a>
+                   
+                    <span>|</span>
+                    <a href="#">智能生活</a>
+                    <span>|</span>
+                    <a href="#">Select Location</a>
+                </div>
+                <div class="site-shop fr">
+                    <a href="#" class="cart">
+                        <em class="iconfont">&#xe61c;</em>购物车
+                        <span class="J-sp"> (0) </span>
+                    </a>
+                    <div class="j-menu">
+                        购物车中还没有商品，赶紧选购吧！
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
